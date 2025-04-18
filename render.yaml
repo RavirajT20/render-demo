@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: whatsapp-chat-analyzer
+    env: python
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: streamlit run app.py  # Replace with your main file if different
+    pythonVersion: 3.10
